@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	overflow-x: hidden;
+	
+}
+
+
+.nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: 2;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+.nav a {
+	display: block;
+	padding: 20px 17px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #ccc;
+}
+.nav a:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+.nav .close {
+	position: absolute;
+	top: 0;
+	right: 32px;
+	margin-left: 5px;
+	font-size: 30px;
+	padding-right: 0px;
+}
+.slide a {
+	color: #000;
+	font-size: 35px;
+}
+#content {
+	padding: 15px;
+	transition: margin-left 0.2s;
+	overflow: hidden;
+	width: 100%;
+}
+.img2 {
+  padding-left: 70px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
