@@ -1,0 +1,47 @@
+
+<?php
+include_once 'include/db.php';
+require('include/nav_admin.php');
+
+?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>File Uploading With PHP and MySql</title>
+<link rel="stylesheet" href="css/style1.css" type="text/css" />
+</head>
+<body>
+<!-- <div id="header">
+<label>File Uploading With PHP and MySql</label>
+</div> -->
+<div id="body">
+ 
+ <form action="upload.php" method="post" enctype="multipart/form-data">
+ <input type="file" name="file" placeholder="Browse" required />
+ <button type="submit" name="btn-upload">Upload</button>
+ </form>
+    <br /><br />
+    <?php
+ if(isset($_GET['success']))
+ {
+  ?>
+        <label>File Uploaded Successfully...  <a href="view.php">click here to view file.</a></label>
+        <?php
+ }
+ else if(isset($_GET['fail']))
+ {
+  ?>
+        <label>Problem While File Uploading !</label>
+        <?php
+ }
+ else
+ {
+  ?>
+        <label>Try to upload any files(PDF, DOC, EXE, VIDEO, MP3, ZIP,etc...)</label>
+        <?php
+ }
+ ?>
+</div>
+</body>
+</html>
+
